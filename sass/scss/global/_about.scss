@@ -1,17 +1,33 @@
+h1{
+    color: $font-tittles-color;
+    font-size: $font-size*2;
+    &.tittle-index{
+        font-family: $font-family-goth;
+        font-weight: 400;  
+        font-size: $font-size*4;  
+        padding-bottom: 1.5rem; 
+    }
+    &.tittle-about{
+        @extend.tittle-index;
+    }
+    &.tittle-contact{
+        margin: 7px 0px; 
+    }
+}
+
 .text-bio{
     padding: 1.5rem 0;
     font-size: 0.8rem;
     text-align: left;
     column-count: 2;
 }
-
 .text-bio-about{
-    font-size: 0.9rem;
+    margin: 1rem 0 2rem;
+    font-size: 1rem;
     text-align: center;
     column-count: 1;
     color: nth($colors, 4);
 }
-
 .photos-bio img{
     filter: grayscale(100%);
     &:hover{
@@ -21,22 +37,23 @@
 }
 
 @media (max-width:768px){
-    .tittle-index{  
-        font-family: $font-family-goth;
-        font-weight: 400;  
-        font-size: 2.5rem;  
-        color: $link-color; 
-    }
+    h1{
+        &.tittle-index{
+            @include tittle($font-family-goth, $font-weight, $font-tittles-color, $padding-bottom-tittle, 3.5rem); 
+        }
+        &.tittle-about{
+            @include tittle($font-family-goth, $font-weight, $link-color, $padding-bottom-tittle, 3rem); 
+        }
+    }  
     .text-bio{
         margin: 0 1rem;
         padding: 1rem 0;
-        font-size: 0.9rem;
+        font-size: 0.6rem;
         column-count: 1;
         text-align: center;
     }
-
     .text-bio-about{
-        margin: 1rem 0;
+        margin: 0.5rem 0 2rem;
         font-size: 0.9rem;
         text-align: center;
         column-count: 1;
@@ -45,10 +62,26 @@
 }
 
 @media (max-width: 576px){
-    .tittle-index{  
-        font-family: $font-family-goth;
-        font-weight: 400;  
-        font-size: 1.8rem;  
-        color: $link-color;       
+    h1{
+        &.tittle-index{
+           @include tittle($font-family-goth, $font-weight, $font-tittles-color, $padding-bottom-tittle, 3rem); 
+        }
+        &.tittle-about{
+            @include tittle($font-family-goth, $font-weight, $link-color, $padding-bottom-tittle, 2.5rem); 
+        }
+    }
+    .text-bio{
+        margin: 0 1rem;
+        padding: 1rem 0;
+        font-size: 0.8rem;
+        column-count: 1;
+        text-align: center;
+    }
+    .text-bio-about{
+        margin: 0.5rem 1 2rem;
+        font-size: 0.9rem;
+        text-align: center;
+        column-count: 1;
+        color: nth($colors, 4);
     } 
 }

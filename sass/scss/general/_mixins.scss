@@ -5,3 +5,10 @@
     margin: $button-margin;
     padding: $button-padding;
 }
+@mixin tittle ($font-family-goth, $font-weight, $font-tittles-color, $padding-bottom-tittle, $font-size){
+    font-family: $font-family-goth;
+    font-weight: $font-weight;
+    color: $font-tittles-color;
+    padding-bottom: $padding-bottom-tittle;
+    font-size: $font-size;  
+}

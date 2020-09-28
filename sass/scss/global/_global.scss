@@ -17,18 +17,6 @@ a{
         text-decoration: none; }
 }
 
-h1{
-    color: $font-tittles-color;
-    font-size: $font-size*2;
-    &.tittle-index{
-        font-family: $font-family-goth;
-        font-weight: 400;  
-        font-size: $font-size*4;  
-        padding-bottom: 1.5rem; }
-    &.tittle-contact{
-        margin: 7px 0px; }
-}
-
 /*Tattoo-index*/
 .carousel-item{
     background: no-repeat;
