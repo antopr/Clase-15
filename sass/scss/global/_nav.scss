@@ -1,0 +1,29 @@
+nav{
+     background-color: $bg-nav;
+     height: 70px;
+     a{
+          img{
+               width: $logo-size*3;
+               height: $logo-size;
+          }
+     }
+     div ul li a{
+          color:$font-color !important;
+          &:hover{
+               color: $link-color !important;
+          }
+     }
+}
+
+.dropdown-menu{
+     min-width: 8rem;
+     background-color: $bg-nav;
+     text-align: center;
+     .dropdown-item{
+         color: $font-color;
+         &:hover{
+             color: $link-color;
+             background-color: transparent;
+         }
+     }
+}

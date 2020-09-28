@@ -1,0 +1,21 @@
+.button{
+    &.primary-button{
+    @include buttons($primary-color, $fourth-color, $button-margin, $button-padding);
+    &:hover{
+        color: $primary-color;
+        background-color: $fourth-color;
+        } 
+    }
+    
+    &.secondary-button{
+    @include buttons($secondary-color, $tertiary-color, $button-margin, $button-padding);
+    &:hover{
+        color: $secondary-color;
+        background-color: $tertiary-color;
+        }
+    }
+
+    &:focus{
+        box-shadow: none;
+    }
+}

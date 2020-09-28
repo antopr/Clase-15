@@ -1,0 +1,47 @@
+.makeup{
+    .makeup-item{
+        cursor: pointer;
+        position: relative;
+        display: block;
+        max-width: 15rem;
+        border-radius: 0.6rem;   
+        overflow: hidden;
+    }
+    .makeup-item-overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all 0.2s ease-in-out;
+        opacity: 0;
+        background-color:#a6242477;
+        &:hover{
+            opacity: 1;
+        }
+        .makeup-item-overlay-content{
+            font-size: 1.5rem;
+        }
+    }
+    .makeup-modal{
+        .makeup-modal-title{
+            font-size: 2.25rem;
+            line-height: 2rem;
+        }
+        .close{
+            position: absolute;
+            z-index: 1;
+            right: 1.5rem;
+            top: 1rem;
+            font-size: 3rem;
+            line-height: 3rem;
+            color: #a6242477;
+            opacity: 1;
+        }
+    } 
+} 
+
+@media (min-width: 992px){
+    .makeup-modal .makeup-modal-title{
+      font-size: 3rem;
+      line-height: 2.5rem;
+    }
+}

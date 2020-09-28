@@ -1,0 +1,24 @@
+.bg-images{
+    background-position: center;
+    background-size: cover;
+    height: $bg-images-min-height;
+    
+    &.header-bg{
+        background-image: url("../../images/index/indexback-1.png"); }
+    &.contact-bg{
+        background-image: url("../../images/index/contactback.png");
+        filter: grayscale(100%);
+        height: $bg-images-min-height;
+        &:hover{
+            filter: none; }
+    }
+    &.makeup-bg{
+        background-image: url("../../images/makeup/2020-08-13_home-slider_full-size-and-mini.png"); }
+    
+    &.shoes-bg-slide1{
+        background-image: url("../../images/shoes/desktop-banner-5_1512x.png"); }
+    &.shoes-bg-slide2{
+        background-image: url("../../images/shoes/desktop-banner-1_1512x.png"); }
+    &.shoes-bg-slide3{
+        background-image: url("../../images/shoes/desktop-banner-3_1512x.png"); }
+}

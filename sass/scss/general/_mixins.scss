@@ -1,0 +1,7 @@
+/*Buttons*/
+@mixin buttons($primary-color, $fourth-color, $button-margin, $button-padding){
+    background: $primary-color;
+    color: $fourth-color;
+    margin: $button-margin;
+    padding: $button-padding;
+}

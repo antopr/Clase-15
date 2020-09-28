@@ -1,0 +1,7 @@
+.form-control:focus{
+    color: $tertiary-color;
+    background-color: #fff;
+    border-color: $fourth-color;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem $primary-color;
+}

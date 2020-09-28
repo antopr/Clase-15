@@ -1,0 +1,29 @@
+.shoes-item{    
+    position: relative;
+    img{
+        width: 300px;
+        height: 300px;
+        border-radius: 0.6rem;  
+    }
+    &:hover .overlay-inside{
+        opacity: 0.8;
+    }
+    &:hover .overlayleft-inside{
+        width: 300px;
+    }
+
+}
+.overlay-inside{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    background-color: #262626;
+    border-radius: 0.6rem;
+}
+.overlayleft-inside{
+    height: 300px;
+    width: 0;
+    background-color: #262626;
+}

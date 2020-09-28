@@ -1,0 +1,15 @@
+section#tattoos{
+    @if $bg-tattoo-gallery=='background'{
+        background-color: #0d0d0dbb;
+        border-radius: 0.5rem;
+    }
+    @else{
+        background-color: #D9B1A3;
+    }
+}
+
+@each $valor in $colors{
+    .btn-#{valor} {
+    background-color: $valor;
+    }
+}
