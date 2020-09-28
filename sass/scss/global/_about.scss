@@ -30,8 +30,25 @@
     .text-bio{
         margin: 0 1rem;
         padding: 1rem 0;
-        font-size: 0.6rem;
+        font-size: 0.9rem;
         column-count: 1;
         text-align: center;
     }
+
+    .text-bio-about{
+        margin: 1rem 0;
+        font-size: 0.9rem;
+        text-align: center;
+        column-count: 1;
+        color: nth($colors, 4);
+    }
+}
+
+@media (max-width: 576px){
+    .tittle-index{  
+        font-family: $font-family-goth;
+        font-weight: 400;  
+        font-size: 1.8rem;  
+        color: $link-color;       
+    } 
 }
