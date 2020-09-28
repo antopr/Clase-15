@@ -1,0 +1,20 @@
+@font-face{
+    font-family: "Magnificent Personal Use", cursive;
+    src: url("../fonts/Magnificent\ Personal\ Use.ttf");
+}
+@font-face{
+    font-family: "Philosopher-Regular";
+    src: url("../fonts/Philosopher-Regular.ttf");
+}
+@font-face{
+    font-family: "Philosopher-Bold";
+    src: url("../fonts/Philosopher-Bold.ttf");
+}
+@font-face{
+    font-family: "Philosopher-BoldItalic";
+    src: url("../fonts/Philosopher-BoldItalic.ttf");
+}
+@font-face{
+    font-family: "Philosopher-Italic";
+    src: url("../fonts/Philosopher-Italic.ttf");
+}
