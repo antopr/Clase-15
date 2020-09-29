@@ -22,3 +22,19 @@
     &.shoes-bg-slide3{
         background-image: url("../../images/shoes/desktop-banner-3_1512x.png"); }
 }
+
+@media (max-width: 576px){
+    .bg-images{
+        background-position: center;
+        background-size: cover;
+        min-height: 239px;
+        &.contact-bg{
+            background-image: url("../../images/index/contactback-2.png");
+            filter: grayscale(100%);
+            min-height: 239px;
+            &:hover{
+                filter: none; }
+        }
+    }
+}
+

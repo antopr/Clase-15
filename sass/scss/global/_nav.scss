@@ -1,4 +1,5 @@
 nav{
+     z-index: 100;
      background-color: $bg-nav;
      height: 70px;
      a{
@@ -17,7 +18,7 @@ nav{
 
 .dropdown-menu{
      min-width: 8rem;
-     background-color: $bg-nav;
+     background-color: transparent;
      text-align: center;
      .dropdown-item{
          color: $font-color;
