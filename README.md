@@ -1,3 +1,3 @@
 # Clase-15
 Fanpage ~ Kat Von D
-Proyecto en desarrollo.
+(Proyecto en desarrollo)
