@@ -15,29 +15,13 @@
 
     .card{
         border: 0.5px solid $font-color;
+        box-shadow: 5px 5px 8px $fourth-color;
         .card-title{
             color: $font-tittles-color;
             font-size: 0.9rem;
             text-align: center;
         }
     } 
-
-    .carousel-control-prev,
-    .carousel-control-next{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 0;
-    text-align: center;
-    opacity: 0.5;
-    span.icon{
-        width: 97%;
-        color:$font-tittles-color;
-        }
-    }
 
     iframe{
         width: 660px;
@@ -52,6 +36,23 @@
         height: auto;
     }
 } 
+
+.carousel-control-prev,
+.carousel-control-next{
+position: absolute;
+top: 0;
+bottom: 0;
+display: flex;
+align-items: center;
+justify-content: space-around;
+width: 0;
+text-align: center;
+opacity: 0.5;
+span.icon{
+    width: 97%;
+    color:$font-tittles-color;
+    }
+}
 
 .modal-body{
     overflow: hidden;

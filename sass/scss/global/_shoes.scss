@@ -27,3 +27,30 @@
     width: 0;
     background-color: #262626;
 }
+
+.shoes{
+    background-color: white;
+    .tittle-icon{
+        color: $tertiary-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span{
+            font-size: 1rem;
+            color: $fifth-color;
+            padding: 0.6rem;
+            align-self: center;
+        }  
+    }
+
+    .card{
+        border: 0.5px solid $fifth-color;
+        box-shadow: 5px 5px 8px $tertiary-color;
+        .card-title{
+            color: $tertiary-color;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+    } 
+
+}

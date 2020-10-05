@@ -32,6 +32,13 @@
             }
     }
 
+    &.fifth-button{
+        @include buttons($fifth-color, $tertiary-color, $button-margin, $button-padding);
+        &:hover{
+            color: $fifth-color;
+            background-color: $tertiary-color;
+            }
+    }
 
     &:focus{
         box-shadow: none;

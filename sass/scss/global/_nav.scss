@@ -45,3 +45,34 @@ button:focus{
      background-color: $bg-nav-collapse;
      display: block;
 }
+.nav-makeup{
+     background-color: $fourth-color;
+     div ul li a{
+          color: $primary-color !important;
+          &:hover{
+               color: $link-color !important;
+          }
+     }
+     .dropdown-menu{
+          background-color: $fourth-color;
+          }
+     .collapse.show{
+          background-color: $fourth-color;
+     }
+}
+
+.nav-shoes{
+     background-color: $fifth-color;
+     div ul li a{
+          color: $font-color !important;
+          &:hover{
+               color: $link-color !important;
+          }
+     }
+     .dropdown-menu{
+          background-color: $fifth-color;
+          }
+     .collapse.show{
+          background-color: $fifth-color;
+     }
+}
