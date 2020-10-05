@@ -15,6 +15,24 @@
         }
     }
 
+    &.tertiary-button{
+        @include buttons($fourth-color, $primary-color, $button-margin, $button-padding);
+        border-radius: 0;
+        &:hover{
+            color: $secondary-color;
+            background-color: $tertiary-color;
+            }
+    }
+
+    &.fourth-button{
+        @include buttons($fourth-color, $primary-color, $button-margin, $button-padding);
+        &:hover{
+            color: $secondary-color;
+            background-color: $tertiary-color;
+            }
+    }
+
+
     &:focus{
         box-shadow: none;
     }

@@ -1,6 +1,6 @@
 footer{
     height: 55px;
-    background-color: nth($colors, 1);
+    background-color: $footer-bg;
     border-top: 0.5px solid $footer-border-top;
     div ul li a{
         font-size: 0.75rem;

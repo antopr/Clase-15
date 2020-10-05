@@ -126,25 +126,29 @@
               </div>                  
             </div>              
           </div> 
-          <div class="form-group"> 
-            <label for="first-tattoo">Is this your first tattoo?</label>
-            <input type="radio" name="first-tattoo" id="first-tattoo" value="yes">Yes                
-            <input type="radio" name="first-tattoo" id="first-tattoo" value="no">No
+
+          <div class="form-row d-flex flex-column justify-content-start align-items-start">
+            <div class="form-group"> 
+              <label for="first-tattoo">Is this your first tattoo?</label>
+              <input type="radio" name="first-tattoo" id="first-tattoo" value="yes">Yes                
+              <input type="radio" name="first-tattoo" id="first-tattoo" value="no">No
+            </div>
+            <div class="form-group">
+              <label for="tattooed">Have you been tattooed by me before? </label>
+              <input type="radio" name="tattooed" id="tattooed" value="yes2">Yes
+              <label for="tattooed"></label>
+              <input type="radio" name="tattooed" id="tattooed" value="no2">No             
+            </div>  
+            <div class="form-group">
+              <label for="explain_tattoo">In case I’ve tattooed you before, what did you get done?</label>
+              <textarea class="form-control form-control-sm" name="explain_tattoo" id="explain_tattoo"></textarea>
+            </div> 
+            <div class="form-group"> 
+              <label for="option_01">Would you like to receive the Newsletter</label>
+              <input type="checkbox" name="option_o1" value="yes_01">
+            </div>
           </div>
-          <div class="form-group">
-            <label for="tattooed">Have you been tattooed by me before? </label>
-            <input type="radio" name="tattooed" id="tattooed" value="yes2">Yes
-            <label for="tattooed"></label>
-            <input type="radio" name="tattooed" id="tattooed" value="no2">No             
-          </div>  
-          <div class="form-group">
-            <label for="explain_tattoo">In case I’ve tattooed you before, what did you get done?</label>
-            <textarea class="form-control form-control-sm" name="explain_tattoo" id="explain_tattoo"></textarea>
-          </div> 
-          <div class="form-group"> 
-            <label for="option_01">Would you like to receive the Newsletter</label>
-            <input type="checkbox" name="option_o1" value="yes_01">
-          </div>
+
           <input class="btn button secondary-button mb-4" type="reset" value="Delete data">
           <!--
           <input class="btn btn-dark btn-sm mb-4" type="submit" name="button" value="Send">            

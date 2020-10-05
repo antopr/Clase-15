@@ -1,7 +1,15 @@
-.form-control:focus{
+.form-control{
+    background: transparent;
+    background-color: transparent;
+    color: $fourth-color;
+    border: 1px solid $font-tittles-color;
+
+    &:focus{
     color: $tertiary-color;
-    background-color: #fff;
-    border-color: $fourth-color;
+    background-color: transparent;
+    border-color: $font-tittles-color;
     outline: 0;
     box-shadow: 0 0 0 0.2rem $primary-color;
+    }
 }
+

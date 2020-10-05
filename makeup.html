@@ -22,7 +22,7 @@
     <!--style-css-compilado-->
     <link rel="stylesheet" href="sass/css/main.css">
   </head>
-  <body>    
+  <body class="makeup">    
       <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="index.html">
           <img src="images/logo2.png" class="logo d-inline-block align-top" alt="logo" loading="lazy"></a>
@@ -53,78 +53,294 @@
           </ul>
         </div>
       </nav>
-    <header class="py-5 bg-images makeup-bg"></header> 
-    <section class="makeup">
-      <div class="container"> 
-        <div class="d-flex flex-column justify-content-center align-items-center"> 
-          <h1 class="m-4">Shop All</h1>
-          <div class="row mb-3 animate__animated animate__backInRight">        
-            <!-- Makeup Item 1-->
-            <div class="col-sm ">
-              <div class="makeup-item mx-auto" data-toggle="modal" data-target="#makeupModal1">
-                <div class="makeup-item-overlay d-flex align-items-center justify-content-center w-100 h-100">
-                    <div class="makeup-item-overlay-content text-center text-white"><i class="fas fa-star"></i></div>
+    <header class="py-5 bg-images makeup-bg"></header>
+    
+    <!--Top Picks For You-->
+    <section class="container my-4">
+      <h1 class="tittle-icon"><span>♦</span>Top Picks For You<span>♦</span></h1>
+      <!--Carousel Wrapper-->
+      <div id="multi-item-example" class="carousel slide carousel-multi-item my-4" data-ride="carousel">
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+          <!--First slide-->
+          <div class="carousel-item active">
+            <div class="col-lg-3" style="float:left">
+            <div class="card mb-2">
+                <img class="card-img-top"
+                  src="./images/makeup/mk-everlasting-glimmer-veil.jpg" alt="everlasting-glimmer-veil">
+                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                  <h4 class="card-title">Everlasting Glimmer Veil</h4>
+                  <p class="card-text">$18</p>
+                  <a href="#" class="btn button fourth-button btn-sm" data-toggle="modal" data-target="#makeupModal1">Buy</a>
                 </div>
-                <img class="img-fluid" src="images/makeup/mk-everlasting-liquid-lipstick.jpg" alt="everlasting-liquid-lipstick">
               </div>
             </div>
-            <!-- Makeup Item 2-->
-            <div class="col-sm">
-              <div class="makeup-item mx-auto" data-toggle="modal" data-target="#makeupModal2">
-                <div class="makeup-item-overlay d-flex align-items-center justify-content-center w-100 h-100">
-                    <div class="makeup-item-overlay-content text-center text-white"><i class="fas fa-star"></i></div>
+
+            <div class="col-lg-3" style="float:left">
+              <div class="card mb-2">
+                <img class="card-img-top"
+                  src="./images/makeup/mk-everlasting-lip-liner.jpg" alt="everlasting-lip-liner">
+                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                  <h4 class="card-title">Everlasting Lip Liner</h4>
+                  <p class="card-text">$8</p>
+                  <a href="#" class="btn button fourth-button btn-sm" data-toggle="modal" data-target="#makeupModal2">Buy</a>
                 </div>
-                <img class="img-fluid" src="images/makeup/mk-everlasting-glimmer-veil.jpg" alt="everlasting-glimmer-veil">
               </div>
             </div>
-            <!-- Makeup Item 3-->
-            <div class="col-sm">
-              <div class="makeup-item mx-auto" data-toggle="modal" data-target="#makeupModal3">
-                <div class="makeup-item-overlay d-flex align-items-center justify-content-center w-100 h-100">
-                    <div class="makeup-item-overlay-content text-center text-white"><i class="fas fa-star"></i></div>
+
+            <div class="col-lg-3" style="float:left">
+              <div class="card mb-2">
+                <img class="card-img-top"
+                  src="./images/makeup/mk-everlasting-liquid-lipstick.jpg" alt="everlasting-liquid-lipstick">
+                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                  <h4 class="card-title">Everlasting Liquid Lipstick</h4>
+                  <p class="card-text">$9</p>
+                  <a href="#" class="btn button fourth-button btn-sm" data-toggle="modal" data-target="#makeupModal3">Buy</a>
                 </div>
-                <img class="img-fluid" src="images/makeup/mk-everlasting-lip-liner.jpg" alt="everlasting-lip-liner">
               </div>
-            </div> 
+            </div>
+
+            <div class="col-lg-3" style="float:left">
+              <div class="card mb-2">
+                <img class="card-img-top"
+                  src="./images/makeup/mk-lash-liner.jpg" alt="lash-liner">
+                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                  <h4 class="card-title">Lash Liner</h4>
+                  <p class="card-text">$7</p>
+                  <a href="#" class="btn button fourth-button btn-sm" data-toggle="modal" data-target="#makeupModal4">Buy</a>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="row mb-5 animate__animated animate__backInRight animate__delay-1s"> 
-            <!-- Makeup Item 4-->
-            <div class="col-sm">
-              <div class="makeup-item mx-auto" data-toggle="modal" data-target="#makeupModal4">
-                <div class="makeup-item-overlay d-flex align-items-center justify-content-center w-100 h-100">
-                    <div class="makeup-item-overlay-content text-center text-white"><i class="fas fa-star"></i></div>
+          <!--Second slide-->
+          <div class="carousel-item">
+            <div class="col-lg-3" style="float:left">
+              <div class="card mb-2">
+                <img class="card-img-top"
+                  src="./images/makeup/mk-metal-crush.jpg" alt="metal-crush">
+                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                  <h4 class="card-title">Metal Crush</h4>
+                  <p class="card-text">$15</p>
+                  <a href="#" class="btn button fourth-button btn-sm" data-toggle="modal" data-target="#makeupModal5">Buy</a>
                 </div>
-                <img class="img-fluid" src="images/makeup/mk-metal-crush.jpg" alt="/mk-metal-crush">
-              </div>
-            </div>           
-            <!-- Makeup Item 5-->
-            <div class="col-sm">
-              <div class="makeup-item mx-auto" data-toggle="modal" data-target="#makeupModal5">
-                <div class="makeup-item-overlay d-flex align-items-center justify-content-center w-100 h-100">
-                    <div class="makeup-item-overlay-content text-center text-white"><i class="fas fa-star"></i></div>
-                </div>
-                <img class="img-fluid" src="images/makeup/mk-studded-kiss-creme-lipstick.jpg" alt="studded-kiss-creme-lipstick">
               </div>
             </div>
-            <!-- Makeup Item 6-->
-            <div class="col-sm">
-              <div class="makeup-item mx-auto" data-toggle="modal" data-target="#makeupModal6">
-                <div class="makeup-item-overlay d-flex align-items-center justify-content-center w-100 h-100">
-                    <div class="makeup-item-overlay-content text-center text-white"><i class="fas fa-star"></i></div>
+
+            <div class="col-lg-3" style="float:left">
+              <div class="card mb-2">
+                <img class="card-img-top"
+                  src="./images/makeup/mk-studded-kiss-creme-lipstick.jpg" alt="studded-kiss-creme-lipstick">
+                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                  <h4 class="card-title">Studded Kiss Creme Lipstick</h4>
+                  <p class="card-text">$10</p>
+                  <a href="#" class="btn button fourth-button btn-sm" data-toggle="modal" data-target="#makeupModal6">Buy</a>
                 </div>
-                <img class="img-fluid" src="images/makeup/mk-lash-liner.jpg" alt="lash-liner">
               </div>
-            </div>         
+            </div>
+
+            <div class="col-lg-3" style="float:left">
+              <div class="card mb-2">
+                <img class="card-img-top"
+                  src="./images/makeup/mk-brow-struck-dimension-powder.jpg" alt="everlasting-glimmer-veil">
+                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                  <h4 class="card-title">Brow Struck Dimension Powder</h4>
+                  <p class="card-text">$8</p>
+                  <a href="#" class="btn button fourth-button btn-sm" data-toggle="modal" data-target="#makeupModal7">Buy</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3" style="float:left">
+              <div class="card mb-2">
+                <img class="card-img-top"
+                  src="./images/makeup/mk-kitten-mini-lock-it-foundation.jpg" alt="everlasting-glimmer-veil">
+                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                  <h4 class="card-title">Kitten Mini:Lock-It Foundation</h4>
+                  <p class="card-text">$18</p>
+                  <a href="#" class="btn button fourth-button btn-sm" data-toggle="modal" data-target="#makeupModal8">Buy</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>  
+        <!--Controls-->
+        <a class="carousel-control-prev" href="#multi-item-example" role="button" data-slide="prev">
+          <span class="fas fa-chevron-left icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#multi-item-example" role="button" data-slide="next">
+          <span class="fas fa-chevron-right icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
     </section>
+
+    <section class="mt-3">
+      <a href="#">
+        <img class="img-fluid" src="./images/makeup/2020-10-1_category-banner_friends-family-1.jpg" alt="home-slider_full-size-and-mini">
+      </a>
+    </section>
+
+    <!--New Arrivals-->
+    <section class="container my-4">
+      <h2 class="tittle-icon"><span>♦</span>New Arrivals<span>♦</span></h2>
+      <!--Carousel Wrapper-->
+      <div id="multi-item-example-2" class="carousel slide carousel-multi-item my-4" data-ride="carousel">
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+          <!--First slide-->
+          <div class="carousel-item active">
+            <div class="col-lg-3" style="float:left">
+            <div class="card mb-2">
+                <img class="card-img-top"
+                  src="./images/makeup/mk-epic-curl-vegan-lash-primer.jpg" alt="epic-curl-vegan-lash-primer">
+                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                  <h4 class="card-title">Epic Curl Vegan Lash Primer</h4>
+                  <p class="card-text">$24</p>
+                  <a href="#" class="btn button fourth-button btn-sm" data-toggle="modal" data-target="#makeupModal9">Buy</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3" style="float:left">
+              <div class="card mb-2">
+                <img class="card-img-top"
+                  src="./images/makeup/mk-kitten-mini-glamrok-shade+light-eyeshadow-quad.jpg" alt="kitten-mini-glamrok-shade+light-eyeshadow-quad">
+                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                  <h4 class="card-title">Kitten Mini: Glamrok Shade + Light Eyeshadow Quad</h4>
+                  <p class="card-text">$19</p>
+                  <a href="#" class="btn button fourth-button btn-sm" data-toggle="modal" data-target="#makeupModal10">Buy</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3" style="float:left">
+              <div class="card mb-2">
+                <img class="card-img-top"
+                  src="./images/makeup/mk-shake-vegan-eyeshadow-primer.jpg" alt="shake-vegan-eyeshadow-primer">
+                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                  <h4 class="card-title">Shake Vegan Eyeshadow Primer</h4>
+                  <p class="card-text">$22</p>
+                  <a href="#" class="btn button fourth-button btn-sm" data-toggle="modal" data-target="#makeupModal11">Buy</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3" style="float:left">
+              <div class="card mb-2">
+                <img class="card-img-top"
+                  src="./images/makeup/mk-lock-it-finishing-powder.jpg" alt="lock-it-finishing-powder">
+                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                  <h4 class="card-title">Lock-It Finishing Powder</h4>
+                  <p class="card-text">$31</p>
+                  <a href="#" class="btn button fourth-button btn-sm" data-toggle="modal" data-target="#makeupModal12">Buy</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Second slide-->
+          <div class="carousel-item">
+            <div class="col-lg-3" style="float:left">
+              <div class="card mb-2">
+                <img class="card-img-top"
+                  src="./images/makeup/mk-lock-it-foundation.jpg" alt="lock-it-foundation">
+                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                  <h4 class="card-title">Lock-It Foundation</h4>
+                  <p class="card-text">$37</p>
+                  <a href="#" class="btn button fourth-button btn-sm" data-toggle="modal" data-target="#makeupModal13">Buy</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3" style="float:left">
+              <div class="card mb-2">
+                <img class="card-img-top"
+                  src="./images/makeup/mk-true-portrait-medium-coverage-shake-foundation.jpg" alt="true-portrait-medium-coverage-shake-foundation">
+                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                  <h4 class="card-title">True Portrait Medium Coverage Shake Foundation</h4>
+                  <p class="card-text">$19</p>
+                  <a href="#" class="btn button fourth-button btn-sm" data-toggle="modal" data-target="#makeupModal14">Buy</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3" style="float:left">
+              <div class="card mb-2">
+                <img class="card-img-top"
+                  src="./images/makeup/mk-ink-well-long-wear-matte-eyeliner.jpg" alt="ink-well-long-wear-matte-eyeliner">
+                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                  <h4 class="card-title">Ink Well Long-Wear Matte Eyeliner</h4>
+                  <p class="card-text">$22</p>
+                  <a href="#" class="btn button fourth-button btn-sm" data-toggle="modal" data-target="#makeupModal15">Buy</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3" style="float:left">
+              <div class="card mb-2">
+                <img class="card-img-top"
+                  src="./images/makeup/mk-dazzle-vegan-eyeshadow-stick.jpg" alt="dazzle-vegan-eyeshadow-stick">
+                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                  <h4 class="card-title">Dazzle Vegan Eyeshadow Stick</h4>
+                  <p class="card-text">$22</p>
+                  <a href="#" class="btn button fourth-button btn-sm" data-toggle="modal" data-target="#makeupModal16" role="button">Buy</a>
+                </div>
+              </div>
+            </div>
+          </div>    
+        </div>
+        <!--Controls-->
+        <a class="carousel-control-prev" href="#multi-item-example-2" role="button" data-slide="prev">
+          <span class="fas fa-chevron-left icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#multi-item-example-2" role="button" data-slide="next">
+          <span class="fas fa-chevron-right icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+
+    <!--Videos & Tutorials-->
+    <section class="container mt-5">
+      <div class="row d-flex flex-column justify-content-center align-items-center">
+        <h2 class="tittle-icon"><span>♦</span>Videos & Tutorials<span>♦</span></h2>
+        <div id="carouselExampleCaptions" class="carousel slide p-2" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <iframe class="" src="https://www.youtube.com/embed/-8aGvCA327Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            
+            </div>
+            <div class="carousel-item">
+              <iframe class="" src="https://www.youtube.com/embed/mvUhhGJ5vmY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <!--Controls-->
+          <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="fas fa-chevron-left icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="fas fa-chevron-right icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <!--Button--> 
+        <a href="#" class="btn button fourth-button btn-sm mt-1 mb-5 text-center" role="button">View All</a>          
+      </div>
+    </section>
+
+    <section class="container my-5">
+      <div class="d-flex justify-content-center align-content-center">
+        <img class="img-fluid vegan-heart-logo" src="./images/makeup/vegan-heart-logo-update.jpg" alt="vegan-heart-logo">
+      </div>
+    </section>
+    
     <footer class="sticky-bottom">
       <div class="container">
         <ul class="list-unstyled list-inline text-center">
           <li class="list-inline-item">
             <a class="btn-floating btn-fb mx-1" href="https://www.facebook.com/katvond" target="_blank">
-              <i class="fab fa-facebook"> </i>
+              <i class="fab fa-facebook"></i>
             </a>
           </li>
           <li class="list-inline-item">
@@ -146,144 +362,521 @@
       </div>
     </footer> 
     <!--Makeup-modal--> 
-    <!--Modal-1-->
-    <div class="makeup-modal modal fade" id="makeupModal1" tabindex="-1" role="dialog" aria-labelledby="makeupModal1Label" aria-hidden="true">
+    <!--Top Picks For You-->
+     <!--Modal-1-->
+     <div class="makeup-modal modal fade" id="makeupModal1" tabindex="-1" role="dialog" aria-labelledby="makeupModal1Label" aria-hidden="true">
       <div class="modal-dialog modal-xl" role="document">
           <div class="modal-content">
               <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true"></span>
               </button>
-              <div class="modal-body text-center">
-                  <div class="container">
-                      <div class="row justify-content-center">
-                          <div class="col-lg-8">
+              <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 d-flex justify-content-center align-content-center">
+                            <!-- Modal-image-->
+                            <div class="row">
+                              <img src="./images/makeup/mk-everlasting-glimmer-veil.jpg" alt="everlasting-glimmer-veil">
+                            </div>
+                            <div class="row d-flex flex-column justify-content-center align-items-center">
                               <!-- Modal-title-->
-                              <h2 class="makeup-modal-title text-dark" id="makeupModal1Label">Everlasting Liquid Lipstick</h2>
-                              <!-- Modal-image-->
-                              <img class="img-fluid mb-5" src="images/makeup/mk-everlasting-liquid-lipstick.jpg" alt="everlasting-liquid-lipstick">                              
-                              <button class="btn btn-dark btn-sm" data-dismiss="modal">Close</button>
-                          </div>
-                      </div>
-                  </div>
-              </div>
+                              <h2 class="makeup-modal-title" id="makeupModal1Label">Everlasting Glimmer Veil</h2>
+                              <p class="makeup-modal-price">$18</p>   
+                              <p class="small">6 colors</p>                           
+                              <button class="btn button tertiary-button btn-sm mt-5" data-dismiss="modal">Add to cart</button>
+                              <div class="mt-1 makeup-modal-wish">
+                                <a href="#" type="button" class="card-link-secondary"><i class="fas fa-heart icon-heart"></i>Add to wishlist</a>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
           </div>
       </div>
     </div>
     <!--Modal-2-->
-    <div class="makeup-modal modal fade" id="makeupModal2" tabindex="-1" role="dialog" aria-labelledby="makeupModal2Label" aria-hidden="true">
+    <div class="makeup-modal modal fade" id="makeupModal2" tabindex="-1" role="dialog" aria-labelledby="makeupModal1Label" aria-hidden="true">
       <div class="modal-dialog modal-xl" role="document">
           <div class="modal-content">
               <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true"></span>
               </button>
-              <div class="modal-body text-center">
-                  <div class="container">
-                      <div class="row justify-content-center">
-                          <div class="col-lg-8">
+              <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 d-flex justify-content-center align-content-center">
+                            <!-- Modal-image-->
+                            <div class="row">
+                              <img src="./images/makeup/mk-everlasting-lip-liner.jpg" alt="everlasting-lip-liner">
+                            </div>
+                            <div class="row d-flex flex-column justify-content-center align-items-center">
                               <!-- Modal-title-->
-                              <h2 class="makeup-modal-title text-dark" id="makeupModal2Label">Everlasting Glimmer Veil</h2>
-                              <!-- Modal-image-->
-                              <img class="img-fluid mb-5" src="images/makeup/mk-everlasting-glimmer-veil.jpg" alt="everlasting-glimmer-veil">                              
-                              <button class="btn btn-dark btn-sm" data-dismiss="modal">Close</button>
-                          </div>
-                      </div>
-                  </div>
-              </div>
+                              <h2 class="makeup-modal-title" id="makeupModal1Label">Everlasting Lip Liner</h2>
+                              <p class="makeup-modal-price">$8</p>   
+                              <p class="small">5 colors</p>                           
+                              <button class="btn button tertiary-button btn-sm mt-5" data-dismiss="modal">Add to cart</button>
+                              <div class="mt-1 makeup-modal-wish">
+                                <a href="#" type="button" class="card-link-secondary"><i class="fas fa-heart icon-heart"></i>Add to wishlist</a>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
           </div>
       </div>
-    </div>
+    </div>   
     <!--Modal-3-->
-    <div class="makeup-modal modal fade" id="makeupModal3" tabindex="-1" role="dialog" aria-labelledby="makeupModal3Label" aria-hidden="true">
+    <div class="makeup-modal modal fade" id="makeupModal3" tabindex="-1" role="dialog" aria-labelledby="makeupModal1Label" aria-hidden="true">
       <div class="modal-dialog modal-xl" role="document">
           <div class="modal-content">
               <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true"></span>
               </button>
-              <div class="modal-body text-center">
-                  <div class="container">
-                      <div class="row justify-content-center">
-                          <div class="col-lg-8">
+              <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 d-flex justify-content-center align-content-center">
+                            <!-- Modal-image-->
+                            <div class="row">
+                              <img src="./images/makeup/mk-everlasting-liquid-lipstick.jpg" alt="everlasting-liquid-lipstick">
+                            </div>
+                            <div class="row d-flex flex-column justify-content-center align-items-center">
                               <!-- Modal-title-->
-                              <h2 class="makeup-modal-title text-dark" id="makeupModal3Label">Everlasting Lip Liner</h2>
-                              <!-- Modal-image-->
-                              <img class="img-fluid mb-5" src="images/makeup/mk-everlasting-lip-liner.jpg" alt="everlasting-lip-liner">                              
-                              <button class="btn btn-dark btn-sm" data-dismiss="modal">Close</button>
-                          </div>
-                      </div>
-                  </div>
-              </div>
+                              <h2 class="makeup-modal-title" id="makeupModal1Label">Everlasting Liquid Lipstick</h2>
+                              <p class="makeup-modal-price">$9</p>   
+                              <p class="small">6 colors</p>                           
+                              <button class="btn button tertiary-button btn-sm mt-5" data-dismiss="modal">Add to cart</button>
+                              <div class="mt-1 makeup-modal-wish">
+                                <a href="#" type="button" class="card-link-secondary"><i class="fas fa-heart icon-heart"></i>Add to wishlist</a>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
           </div>
       </div>
-    </div>
+    </div>    
     <!--Modal-4-->
-    <div class="makeup-modal modal fade" id="makeupModal4" tabindex="-1" role="dialog" aria-labelledby="makeupModal4Label" aria-hidden="true">
+    <div class="makeup-modal modal fade" id="makeupModal4" tabindex="-1" role="dialog" aria-labelledby="makeupModal1Label" aria-hidden="true">
       <div class="modal-dialog modal-xl" role="document">
           <div class="modal-content">
               <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true"></span>
               </button>
-              <div class="modal-body text-center">
-                  <div class="container">
-                      <div class="row justify-content-center">
-                          <div class="col-lg-8">
+              <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 d-flex justify-content-center align-content-center">
+                            <!-- Modal-image-->
+                            <div class="row">
+                              <img src="./images/makeup/mk-lash-liner.jpg" alt="lash-liner">
+                            </div>
+                            <div class="row d-flex flex-column justify-content-center align-items-center">
                               <!-- Modal-title-->
-                              <h2 class="makeup-modal-title text-dark" id="makeupModal4Label">Metal Crush</h2>
-                              <!-- Modal-image-->
-                              <img class="img-fluid mb-5" src="images/makeup/mk-metal-crush.jpg" alt="metal-crush">                              
-                              <button class="btn btn-dark btn-sm" data-dismiss="modal">Close</button>
-                          </div>
-                      </div>
-                  </div>
-              </div>
+                              <h2 class="makeup-modal-title" id="makeupModal1Label">Lash Liner</h2>
+                              <p class="makeup-modal-price">$18</p>   
+                              <p class="small">3 colors</p>                           
+                              <button class="btn button tertiary-button btn-sm mt-5" data-dismiss="modal">Add to cart</button>
+                              <div class="mt-1 makeup-modal-wish">
+                                <a href="#" type="button" class="card-link-secondary"><i class="fas fa-heart icon-heart"></i>Add to wishlist</a>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
           </div>
       </div>
-    </div>
+    </div>    
     <!--Modal-5-->
-    <div class="makeup-modal modal fade" id="makeupModal5" tabindex="-1" role="dialog" aria-labelledby="makeupModal5Label" aria-hidden="true">
+    <div class="makeup-modal modal fade" id="makeupModal5" tabindex="-1" role="dialog" aria-labelledby="makeupModal1Label" aria-hidden="true">
       <div class="modal-dialog modal-xl" role="document">
           <div class="modal-content">
               <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true"></span>
               </button>
-              <div class="modal-body text-center">
-                  <div class="container">
-                      <div class="row justify-content-center">
-                          <div class="col-lg-8">
+              <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 d-flex justify-content-center align-content-center">
+                            <!-- Modal-image-->
+                            <div class="row">
+                              <img src="./images/makeup/mk-metal-crush.jpg" alt="metal-crush">
+                            </div>
+                            <div class="row d-flex flex-column justify-content-center align-items-center">
                               <!-- Modal-title-->
-                              <h2 class="makeup-modal-title text-dark" id="makeupModal5Label">Studded Kiss Creme Lipstick</h2>
-                              <!-- Modal-image-->
-                              <img class="img-fluid mb-5" src="images/makeup/mk-studded-kiss-creme-lipstick.jpg" alt="studded-kiss-creme-lipstick">                              
-                              <button class="btn btn-dark btn-sm" data-dismiss="modal">Close</button>
-                          </div>
-                      </div>
-                  </div>
-              </div>
+                              <h2 class="makeup-modal-title" id="makeupModal1Label">Metal Crush</h2>
+                              <p class="makeup-modal-price">$15</p>   
+                              <p class="small">4 colors</p>                           
+                              <button class="btn button tertiary-button btn-sm mt-5" data-dismiss="modal">Add to cart</button>
+                              <div class="mt-1 makeup-modal-wish">
+                                <a href="#" type="button" class="card-link-secondary"><i class="fas fa-heart icon-heart"></i>Add to wishlist</a>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+          </div>
+      </div>
+    </div>    
+    <!--Modal-6-->
+    <div class="makeup-modal modal fade" id="makeupModal6" tabindex="-1" role="dialog" aria-labelledby="makeupModal1Label" aria-hidden="true">
+      <div class="modal-dialog modal-xl" role="document">
+          <div class="modal-content">
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true"></span>
+              </button>
+              <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 d-flex justify-content-center align-content-center">
+                            <!-- Modal-image-->
+                            <div class="row">
+                              <img src="./images/makeup/mk-studded-kiss-creme-lipstick.jpg" alt="studded-kiss-creme-lipstick">
+                            </div>
+                            <div class="row d-flex flex-column justify-content-center align-items-center">
+                              <!-- Modal-title-->
+                              <h2 class="makeup-modal-title" id="makeupModal1Label">Studded Kiss Creme Lipstick</h2>
+                              <p class="makeup-modal-price">$10</p>   
+                              <p class="small">6 colors</p>                           
+                              <button class="btn button tertiary-button btn-sm mt-5" data-dismiss="modal">Add to cart</button>
+                              <div class="mt-1 makeup-modal-wish">
+                                <a href="#" type="button" class="card-link-secondary"><i class="fas fa-heart icon-heart"></i>Add to wishlist</a>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
           </div>
       </div>
     </div>
-    <!--Modal-6-->
-    <div class="makeup-modal modal fade" id="makeupModal6" tabindex="-1" role="dialog" aria-labelledby="makeupModal6Label" aria-hidden="true">
+    <!--Modal 7-->
+    <div class="makeup-modal modal fade" id="makeupModal7" tabindex="-1" role="dialog" aria-labelledby="makeupModal1Label" aria-hidden="true">
       <div class="modal-dialog modal-xl" role="document">
           <div class="modal-content">
               <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true"></span>
               </button>
-              <div class="modal-body text-center">
-                  <div class="container">
-                      <div class="row justify-content-center">
-                          <div class="col-lg-8">
+              <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 d-flex justify-content-center align-content-center">
+                            <!-- Modal-image-->
+                            <div class="row">
+                              <img src="./images/makeup/mk-brow-struck-dimension-powder.jpg" alt="brow-struck-dimension-powder">
+                            </div>
+                            <div class="row d-flex flex-column justify-content-center align-items-center">
                               <!-- Modal-title-->
-                              <h2 class="makeup-modal-title text-dark" id="makeupModal6Label">Lash Liner</h2>
-                              <!-- Modal-image-->
-                              <img class="img-fluid mb-5" src="images/makeup/mk-lash-liner.jpg" alt="lash-liner" />                              
-                              <button class="btn btn-dark btn-sm" data-dismiss="modal">Close</button>
-                          </div>
-                      </div>
-                  </div>
-              </div>
+                              <h2 class="makeup-modal-title" id="makeupModal1Label">Brow Struck Dimension Powder</h2>
+                              <p class="makeup-modal-price">$8</p>   
+                              <p class="small">2 colors</p>                           
+                              <button class="btn button tertiary-button btn-sm mt-5" data-dismiss="modal">Add to cart</button>
+                              <div class="mt-1 makeup-modal-wish">
+                                <a href="#" type="button" class="card-link-secondary"><i class="fas fa-heart icon-heart"></i>Add to wishlist</a>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
           </div>
       </div>
-    </div> 
+    </div>
+    <!--Modal 8-->
+    <div class="makeup-modal modal fade" id="makeupModal8" tabindex="-1" role="dialog" aria-labelledby="makeupModal1Label" aria-hidden="true">
+      <div class="modal-dialog modal-xl" role="document">
+          <div class="modal-content">
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true"></span>
+              </button>
+              <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 d-flex justify-content-center align-content-center">
+                            <!-- Modal-image-->
+                            <div class="row">
+                              <img src="./images/makeup/mk-kitten-mini-lock-it-foundation.jpg" alt="kitten-mini-lock-it-foundation">
+                            </div>
+                            <div class="row d-flex flex-column justify-content-center align-items-center">
+                              <!-- Modal-title-->
+                              <h2 class="makeup-modal-title" id="makeupModal1Label">Kitten Mini:Lock-It Foundation</h2>
+                              <p class="makeup-modal-price">$18</p>   
+                              <p class="small">6 colors</p>                           
+                              <button class="btn button tertiary-button btn-sm mt-5" data-dismiss="modal">Add to cart</button>
+                              <div class="mt-1 makeup-modal-wish">
+                                <a href="#" type="button" class="card-link-secondary"><i class="fas fa-heart icon-heart"></i>Add to wishlist</a>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+          </div>
+      </div>
+    </div>
+
+    <!--New Arrivals-->
+     <!--Modal-9-->
+     <div class="makeup-modal modal fade" id="makeupModal9" tabindex="-1" role="dialog" aria-labelledby="makeupModal1Label" aria-hidden="true">
+      <div class="modal-dialog modal-xl" role="document">
+          <div class="modal-content">
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true"></span>
+              </button>
+              <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 d-flex justify-content-center align-content-center">
+                            <!-- Modal-image-->
+                            <div class="row">
+                              <img src="./images/makeup/mk-epic-curl-vegan-lash-primer.jpg" alt="epic-curl-vegan-lash-primer">
+                            </div>
+                            <div class="row d-flex flex-column justify-content-center align-items-center">
+                              <!-- Modal-title-->
+                              <h2 class="makeup-modal-title" id="makeupModal1Label">Epic Curl Vegan Lash Primer</h2>
+                              <p class="makeup-modal-price">$24</p>   
+                              <p class="small">6 colors</p>                           
+                              <button class="btn button tertiary-button btn-sm mt-5" data-dismiss="modal">Add to cart</button>
+                              <div class="mt-1 makeup-modal-wish">
+                                <a href="#" type="button" class="card-link-secondary"><i class="fas fa-heart icon-heart"></i>Add to wishlist</a>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+          </div>
+      </div>
+    </div>
+    <!--Modal-10-->
+    <div class="makeup-modal modal fade" id="makeupModal10" tabindex="-1" role="dialog" aria-labelledby="makeupModal1Label" aria-hidden="true">
+      <div class="modal-dialog modal-xl" role="document">
+          <div class="modal-content">
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true"></span>
+              </button>
+              <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 d-flex justify-content-center align-content-center">
+                            <!-- Modal-image-->
+                            <div class="row">
+                              <img src="./images/makeup/mk-kitten-mini-glamrok-shade+light-eyeshadow-quad.jpg" alt="kitten-mini-glamrok-shade+light-eyeshadow-quad">
+                            </div>
+                            <div class="row d-flex flex-column justify-content-center align-items-center">
+                              <!-- Modal-title-->
+                              <h2 class="makeup-modal-title" id="makeupModal1Label">Kitten Mini: Glamrok Shade + Light Eyeshadow Quad</h2>
+                              <p class="makeup-modal-price">$19</p>   
+                              <p class="small">5 colors</p>                           
+                              <button class="btn button tertiary-button btn-sm mt-5" data-dismiss="modal">Add to cart</button>
+                              <div class="mt-1 makeup-modal-wish">
+                                <a href="#" type="button" class="card-link-secondary"><i class="fas fa-heart icon-heart"></i>Add to wishlist</a>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+          </div>
+      </div>
+    </div>   
+    <!--Modal-11-->
+    <div class="makeup-modal modal fade" id="makeupModal11" tabindex="-1" role="dialog" aria-labelledby="makeupModal1Label" aria-hidden="true">
+      <div class="modal-dialog modal-xl" role="document">
+          <div class="modal-content">
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true"></span>
+              </button>
+              <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 d-flex justify-content-center align-content-center">
+                            <!-- Modal-image-->
+                            <div class="row">
+                              <img src="./images/makeup/mk-shake-vegan-eyeshadow-primer.jpg" alt="shake-vegan-eyeshadow-primer">
+                            </div>
+                            <div class="row d-flex flex-column justify-content-center align-items-center">
+                              <!-- Modal-title-->
+                              <h2 class="makeup-modal-title" id="makeupModal1Label">Shake Vegan Eyeshadow Primer</h2>
+                              <p class="makeup-modal-price">$22</p>   
+                              <p class="small">6 colors</p>                           
+                              <button class="btn button tertiary-button btn-sm mt-5" data-dismiss="modal">Add to cart</button>
+                              <div class="mt-1 makeup-modal-wish">
+                                <a href="#" type="button" class="card-link-secondary"><i class="fas fa-heart icon-heart"></i>Add to wishlist</a>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+          </div>
+      </div>
+    </div>    
+    <!--Modal-12-->
+    <div class="makeup-modal modal fade" id="makeupModal12" tabindex="-1" role="dialog" aria-labelledby="makeupModal1Label" aria-hidden="true">
+      <div class="modal-dialog modal-xl" role="document">
+          <div class="modal-content">
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true"></span>
+              </button>
+              <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 d-flex justify-content-center align-content-center">
+                            <!-- Modal-image-->
+                            <div class="row">
+                              <img src="./images/makeup/mk-lock-it-finishing-powder.jpg" alt="lash-liner">
+                            </div>
+                            <div class="row d-flex flex-column justify-content-center align-items-center">
+                              <!-- Modal-title-->
+                              <h2 class="makeup-modal-title" id="makeupModal1Label">Lock-It Finishing Powder</h2>
+                              <p class="makeup-modal-price">$31</p>   
+                              <p class="small">3 colors</p>                           
+                              <button class="btn button tertiary-button btn-sm mt-5" data-dismiss="modal">Add to cart</button>
+                              <div class="mt-1 makeup-modal-wish">
+                                <a href="#" type="button" class="card-link-secondary"><i class="fas fa-heart icon-heart"></i>Add to wishlist</a>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+          </div>
+      </div>
+    </div>    
+    <!--Modal-13-->
+    <div class="makeup-modal modal fade" id="makeupModal13" tabindex="-1" role="dialog" aria-labelledby="makeupModal1Label" aria-hidden="true">
+      <div class="modal-dialog modal-xl" role="document">
+          <div class="modal-content">
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true"></span>
+              </button>
+              <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 d-flex justify-content-center align-content-center">
+                            <!-- Modal-image-->
+                            <div class="row">
+                              <img src="./images/makeup/mk-lock-it-foundation.jpg" alt="lock-it-foundation">
+                            </div>
+                            <div class="row d-flex flex-column justify-content-center align-items-center">
+                              <!-- Modal-title-->
+                              <h2 class="makeup-modal-title" id="makeupModal1Label">Lock-It Foundation</h2>
+                              <p class="makeup-modal-price">$37</p>   
+                              <p class="small">4 colors</p>                           
+                              <button class="btn button tertiary-button btn-sm mt-5" data-dismiss="modal">Add to cart</button>
+                              <div class="mt-1 makeup-modal-wish">
+                                <a href="#" type="button" class="card-link-secondary"><i class="fas fa-heart icon-heart"></i>Add to wishlist</a>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+          </div>
+      </div>
+    </div>    
+    <!--Modal-14-->
+    <div class="makeup-modal modal fade" id="makeupModal14" tabindex="-1" role="dialog" aria-labelledby="makeupModal1Label" aria-hidden="true">
+      <div class="modal-dialog modal-xl" role="document">
+          <div class="modal-content">
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true"></span>
+              </button>
+              <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 d-flex justify-content-center align-content-center">
+                            <!-- Modal-image-->
+                            <div class="row">
+                              <img src="./images/makeup/mk-true-portrait-medium-coverage-shake-foundation.jpg" alt="true-portrait-medium-coverage-shake-foundation">
+                            </div>
+                            <div class="row d-flex flex-column justify-content-center align-items-center">
+                              <!-- Modal-title-->
+                              <h2 class="makeup-modal-title" id="makeupModal1Label">True Portrait Medium Coverage Shake Foundation</h2>
+                              <p class="makeup-modal-price">$19</p>   
+                              <p class="small">6 colors</p>                           
+                              <button class="btn button tertiary-button btn-sm mt-5" data-dismiss="modal">Add to cart</button>
+                              <div class="mt-1 makeup-modal-wish">
+                                <a href="#" type="button" class="card-link-secondary"><i class="fas fa-heart icon-heart"></i>Add to wishlist</a>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+          </div>
+      </div>
+    </div>
+    <!--Modal 15-->
+    <div class="makeup-modal modal fade" id="makeupModal15" tabindex="-1" role="dialog" aria-labelledby="makeupModal1Label" aria-hidden="true">
+      <div class="modal-dialog modal-xl" role="document">
+          <div class="modal-content">
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true"></span>
+              </button>
+              <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 d-flex justify-content-center align-content-center">
+                            <!-- Modal-image-->
+                            <div class="row">
+                              <img src="./images/makeup/mk-ink-well-long-wear-matte-eyeliner.jpg" alt="ink-well-long-wear-matte-eyeliner">
+                            </div>
+                            <div class="row d-flex flex-column justify-content-center align-items-center">
+                              <!-- Modal-title-->
+                              <h2 class="makeup-modal-title" id="makeupModal1Label">Ink Well Long-Wear Matte Eyeliner</h2>
+                              <p class="makeup-modal-price">$22</p>   
+                              <p class="small">2 colors</p>                           
+                              <button class="btn button tertiary-button btn-sm mt-5" data-dismiss="modal">Add to cart</button>
+                              <div class="mt-1 makeup-modal-wish">
+                                <a href="#" type="button" class="card-link-secondary"><i class="fas fa-heart icon-heart"></i>Add to wishlist</a>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+          </div>
+      </div>
+    </div>
+    <!--Modal 16-->
+    <div class="makeup-modal modal fade" id="makeupModal16" tabindex="-1" role="dialog" aria-labelledby="makeupModal1Label" aria-hidden="true">
+      <div class="modal-dialog modal-xl" role="document">
+          <div class="modal-content">
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true"></span>
+              </button>
+              <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 d-flex justify-content-center align-content-center">
+                            <!-- Modal-image-->
+                            <div class="row">
+                              <img src="./images/makeup/mk-dazzle-vegan-eyeshadow-stick.jpg" alt="kitten-mini-lock-it-foundation">
+                            </div>
+                            <div class="row d-flex flex-column justify-content-center align-items-center">
+                              <!-- Modal-title-->
+                              <h2 class="makeup-modal-title" id="makeupModal1Label">Dazzle Vegan Eyeshadow Stick</h2>
+                              <p class="makeup-modal-price">$22</p>   
+                              <p class="small">6 colors</p>                           
+                              <button class="btn button tertiary-button btn-sm mt-5" data-dismiss="modal">Add to cart</button>
+                              <div class="mt-1 makeup-modal-wish">
+                                <a href="#" type="button" class="card-link-secondary"><i class="fas fa-heart icon-heart"></i>Add to wishlist</a>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+          </div>
+      </div>
+    </div>
     
     <!--jquery-js-->   
     <script src="js/jquery-3.5.1.slim.min.js"></script>

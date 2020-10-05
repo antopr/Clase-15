@@ -18,8 +18,9 @@ nav{
 
 .dropdown-menu{
      min-width: 8rem;
-     background-color: transparent;
+     background-color: $bg-nav-collapse;
      text-align: center;
+     border: none;
      .dropdown-item{
          color: $font-color;
          &:hover{

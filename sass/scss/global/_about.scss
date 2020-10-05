@@ -16,7 +16,7 @@ h1{
 }
 
 .text-bio{
-    padding: 1.5rem 0;
+    padding: 1rem 0;
     font-size: 0.8rem;
     text-align: left;
     column-count: 2;
@@ -26,7 +26,6 @@ h1{
     font-size: 1rem;
     text-align: center;
     column-count: 1;
-    color: nth($colors, 4);
 }
 .photos-bio img{
     filter: grayscale(100%);
