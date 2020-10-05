@@ -41,7 +41,10 @@
 
     iframe{
         width: 660px;
-        height: 415px; 
+        height: 415px;
+        @media (max-width: 576px){
+                width: 100%;
+        } 
     }
     
     .vegan-heart-logo{
@@ -74,12 +77,12 @@
 
 @media (max-width:768px){
     .modal{
-        width: 80%;
+        width: 100%;
     }
 }
 
 @media (max-width: 576px){
     .modal{
-        width: 80%;
+        width: 100%;
     }
 }
