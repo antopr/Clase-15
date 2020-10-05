@@ -71,3 +71,15 @@
         color: $primary-color;
     }
 }
+
+@media (max-width:768px){
+    .modal{
+        width: 80%;
+    }
+}
+
+@media (max-width: 576px){
+    .modal{
+        width: 50%;
+    }
+}
