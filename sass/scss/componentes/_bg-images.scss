@@ -14,11 +14,16 @@
     }
     &.makeup-bg{
         background-image: url("../../images/makeup/2020-08-13_home-slider_full-size-and-mini.png"); }
-    
+    &.makeup-bg-sm{
+        background-image: url("../../images/makeup/2020-08-13_home-slider_full-size-and-mini-sm.png"); }    
     &.shoes-bg-slide1{
         background-image: url("../../images/shoes/desktop-banner-5_1512x.png"); }
     &.shoes-bg-slide2{
         background-image: url("../../images/shoes/desktop-banner-1_1512x.png"); }
+    &.shoes-bg-slide1-sm{
+        background-image: url("../../images/shoes/sm-1.jpg"); }
+    &.shoes-bg-slide2-sm{
+        background-image: url("../../images/shoes/sm-2.jpg"); }
 }
 
 @media (max-width: 576px){
