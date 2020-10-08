@@ -26,9 +26,11 @@
     iframe{
         width: 660px;
         height: 415px;
-        @media (max-width: 576px){
-                width: 100%;
+        @media (max-width: 768px), (max-width: 576px){
+            width: 100%;
+            margin-bottom: 1rem;
         } 
+        
     }
     
     .vegan-heart-logo{
@@ -36,23 +38,6 @@
         height: auto;
     }
 } 
-
-.carousel-control-prev,
-.carousel-control-next{
-position: absolute;
-top: 0;
-bottom: 0;
-display: flex;
-align-items: center;
-justify-content: space-around;
-width: 0;
-text-align: center;
-opacity: 0.5;
-span.icon{
-    width: 97%;
-    color:$font-tittles-color;
-    }
-}
 
 .modal-body{
     overflow: hidden;

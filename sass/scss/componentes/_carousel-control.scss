@@ -1,0 +1,54 @@
+
+.carousel-control-prev-1,
+.carousel-control-next-1 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: space-around;
+  width: 0;
+  color: $tertiary-color;
+  text-align: center;
+  opacity: 0.5;
+}
+
+.carousel-control-prev-1:hover, .carousel-control-prev:focus,
+.carousel-control-next:hover,
+.carousel-control-next-1:focus {
+  color: $tertiary-color;
+  text-decoration: none;
+  outline: 0;
+  opacity: .9;
+}
+
+.carousel-control-prev-1 {
+  left: 0;
+}
+
+.carousel-control-next-1 {
+  right: 0;
+}
+
+.carousel-control-prev-icon-1,
+.carousel-control-next-icon-1 {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.carousel-control-prev-icon-1 {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon-1 {
+  background-image: url("/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}

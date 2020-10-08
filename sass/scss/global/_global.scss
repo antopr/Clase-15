@@ -22,3 +22,14 @@ a{
     background: no-repeat;
     background-size: cover;
 }
+
+.arrow-top {
+    text-align: right;
+    padding: 2%;
+    display: scroll;
+    position: sticky;
+    bottom: 40px;
+    right: 0px;
+    z-index: 1500;
+    a {color: $primary-color;}
+}

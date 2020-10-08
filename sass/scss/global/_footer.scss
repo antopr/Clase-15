@@ -4,10 +4,10 @@ footer{
     border-top: 0.5px solid $footer-border-top;    
     div ul li a{
         font-size: 0.75rem;
-        color: whitesmoke;
+        color: $footer-link-color;
         text-decoration: none;
         &:hover{
-            color: $tertiary-color;
+            color: $footer-link-hoover-color;
         }  
     }
 }

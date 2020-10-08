@@ -1,8 +1,4 @@
-.shoes{
-    @media (max-width:768px), (max-width: 576px){      
-        width: 100%;
-    }
-    
+.shoes{    
     background-color: whitesmoke;
     .tittle-shoes{
         font-family: $font-family-goth;
@@ -69,6 +65,7 @@
     }
 
     .card-shoes{
+        background-color: white;
         width: 250px;
         border: 0.5px solid $fifth-color;
         box-shadow: 3px 3px 8px $fifth-color;
