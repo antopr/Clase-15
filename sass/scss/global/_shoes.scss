@@ -1,37 +1,19 @@
-.shoes-item{    
-    position: relative;
-    img{
-        width: 300px;
-        height: 300px;
-        border-radius: 0.6rem;  
-    }
-    &:hover .overlay-inside{
-        opacity: 0.8;
-    }
-    &:hover .overlayleft-inside{
-        width: 300px;
-    }
-
-}
-.overlay-inside{
-    width: 300px;
-    height: 300px;
-    position: absolute;
-    transition: all 0.3s ease-in-out;
-    opacity: 0;
-    background-color: #262626;
-    border-radius: 0.6rem;
-}
-.overlayleft-inside{
-    height: 300px;
-    width: 0;
-    background-color: #262626;
-}
-
 .shoes{
-    background-color: white;
+    @media (max-width:768px), (max-width: 576px){      
+        width: 100%;
+    }
+    
+    background-color: whitesmoke;
+    .tittle-shoes{
+        font-family: $font-family-goth;
+        font-weight: 400;  
+        font-size: $font-size*4; 
+        color: $fifth-color; 
+        padding: 2.5rem 0; 
+    }
+
     .tittle-icon{
-        color: $tertiary-color;
+        color: $fifth-color;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -43,14 +25,63 @@
         }  
     }
 
-    .card{
+    .aside-shoes{
+        margin-top: 2rem;
+        @media (max-width: 992px){
+            margin-top: 1;
+        }
+        @media (max-width: 768px){
+            margin-top: 0;
+        }
+    }
+
+    .shoes-image-center{
+        width: 545px;
+        height: auto;
+        @media (max-width: 992px){
+            width: 445px;
+            height: auto;
+        }
+        @media (max-width: 768px){
+            width: 445px;
+            height: auto;
+        }
+    }
+
+    .shoes-photo-aside{
+        margin-bottom: 1.5rem;
+        width: 220px;
+        height: auto;
+        filter: grayscale(100%);
+        &:hover{
+            filter: none;
+            transition: all 0.2s;
+        }
+        @media (max-width: 992px){
+            margin-bottom: 1rem;
+            width: 200px;
+            height: auto;
+        }
+        @media (max-width: 576px){
+            width: 300px;
+            height: auto;
+        }
+    }
+
+    .card-shoes{
+        width: 250px;
         border: 0.5px solid $fifth-color;
-        box-shadow: 3px 3px 8px $tertiary-color;
-        .card-title{
-            color: $tertiary-color;
-            font-size: 0.9rem;
-            text-align: center;
+        box-shadow: 3px 3px 8px $fifth-color;
+        .card-body-shoes{
+            padding: 0.8rem;
+            .card-title-shoes{
+                color: $fifth-color;
+                font-size: 0.9rem;
+                text-align: center;
+            }
+            .card-text-shoes{
+                color: $tertiary-color;                
+            }
         }
     } 
-
 }

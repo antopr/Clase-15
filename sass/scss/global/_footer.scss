@@ -1,13 +1,13 @@
 footer{
     height: 55px;
     background-color: $footer-bg;
-    border-top: 0.5px solid $footer-border-top;
+    border-top: 0.5px solid $footer-border-top;    
     div ul li a{
         font-size: 0.75rem;
-        color: $footer-link-color;
+        color: whitesmoke;
         text-decoration: none;
         &:hover{
-            color: $footer-link-hoover-color;
+            color: $tertiary-color;
         }  
     }
 }
@@ -16,3 +16,4 @@ ol, ul, dl{
   margin-bottom: 0;
   padding: 10px;
 }
+
