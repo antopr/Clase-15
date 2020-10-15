@@ -34,6 +34,7 @@
     .shoes-image-center{
         width: 545px;
         height: auto;
+        border-radius: 0.25rem;
         @media (max-width: 992px){
             width: 445px;
             height: auto;
@@ -48,6 +49,7 @@
         margin-bottom: 1.5rem;
         width: 220px;
         height: auto;
+        border-radius: 0.25rem;
         filter: grayscale(100%);
         &:hover{
             filter: none;
@@ -71,6 +73,7 @@
         background-color: white;
         width: 250px;
         border: 0.5px solid $fifth-color;
+        border-radius: 0.25rem;
         box-shadow: 3px 3px 8px $fifth-color;
         .card-body-shoes{
             padding: 0.8rem;
